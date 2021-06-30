@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css-bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../js-bootstrap/bootstrap.bundle.min.js"></script>
+
+  <title>Register</title>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Health Track</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../exercises/list-exercise.html">Exercises</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../foods/list-food.html">Foods</a>
+          </li>
+        </ul>
+        <!-- <ul class="navbar-nav me-5 mb-2 mb-lg-0 float-right">
+          <li class="nav-item">
+            <a class="nav-link float-start" href="">Logout</a>
+          </li>
+        </ul> -->
+        <ul class="navbar-nav me-5 mb-2 mb-lg-0 float-right">
+          <li class="nav-item">
+            <a class="nav-link float-start" href="../auth/login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../auth/register.html">Register</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END NAVBAR -->
+
+  <div class="container mt-4" style="margin-bottom: 80px">
+
+    <h3>Register</h3>
+
+    <div class="card">
+
+      <div class="card-body">
+
+        <form action="../index.html" method="GET"> <!-- POST METHOD -->
+          <label for="name">Name: </label>
+          <input type="text" name="name" class="form-control">
+          <label for="email">Email: </label>
+          <input type="email" name="email" class="form-control">
+          <label for="password">Password: </label>
+          <input type="password" name="password" class="form-control">
+          <label for="password2">Repeat your password: </label>
+          <input type="password" name="password2" class="form-control">
+          <button type="submit" class="btn btn-success mt-4">Register</button>
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

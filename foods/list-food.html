@@ -1,0 +1,93 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css-bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../js-bootstrap/bootstrap.bundle.min.js"></script>
+
+  <title>Foods List</title>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Health Track</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../exercises/list-exercise.html">Exercises</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../foods/list-food.html">Foods</a>
+          </li>
+        </ul>
+        <!-- <ul class="navbar-nav me-5 mb-2 mb-lg-0 float-right">
+          <li class="nav-item">
+            <a class="nav-link float-start" href="">Logout</a>
+          </li>
+        </ul> -->
+        <ul class="navbar-nav me-5 mb-2 mb-lg-0 float-right">
+          <li class="nav-item">
+            <a class="nav-link float-start" href="../auth/login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../auth/register.html">Register</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END NAVBAR -->
+
+  <div class="container mt-4" style="margin-bottom: 80px">
+
+    <a href="./add-food.html">
+      <button class="btn btn-primary btn-lg mb-4">New food</button>
+    </a>
+
+    <h2>List of foods:</h2>
+
+    <div class="card mt-4">
+
+      <div class="card-body">
+
+        <h3>Name: Bread</h3>
+        <h6>Consumption date: Tuesday, June 22, 2021</h6>
+        <h6>Amount of kcal: 260</h6>
+        <h6>Type of meal: breakfast</h6>
+        <h6>Food description: A delicious bread in the morning.</h6>
+
+        <a href="./edit-food.html">
+          <button class="text-center btn btn-secondary">Edit</button>
+        </a>
+
+        <form action="./list-food.html" method="GET" class="d-inline">
+          <button type="submit" class="btn btn-danger">Delete</button>
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
